@@ -111,3 +111,18 @@ CREATE -> STAGE, EDIT -> STAGE, MANUALLY DELETE -> STAGE : LAST VERIFY STATUS  (
 | Verified staging area    | `git status`       | Shows what will go into next commit                                       | Final review before commit  |
 
 
+
+Branching Strategy :-
+
+git checkout -b newfeature      | new branch from main branch
+edit files                      | edit the files
+git add README.md               | staging
+git commit -m "update"          | commit changes
+git push origin newfeature      | push updates in new branch
+
+------ CODE REVIEW HAPPENS HERE ------
+Pull Request → reviewers check code → CI tests run → approval
+
+git checkout main               | switch to main branch
+git merge newfeature            | merge the newfeature to main branch
+git branch -d newfeature        | delete the feature branch
