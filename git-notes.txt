@@ -125,4 +125,8 @@ Pull Request → reviewers check code → CI tests run → approval
 
 git checkout main               | switch to main branch
 git merge newfeature            | merge the newfeature to main branch
+git push origin main            | to get updated content 
 git branch -d newfeature        | delete the feature branch
+
+
+
