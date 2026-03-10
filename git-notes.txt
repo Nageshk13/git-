@@ -84,7 +84,7 @@ Reason: -a automatically stages modified files (not new files).
 | rename file           |  'git mv newlogs logs' => {no staging required if doing directly by using git} else manually =>> mv oldname.txt newname.txt -> git add newname.txt -> git rm oldname.txt |
 |create + switch branch |  'git checkout -b <branch name>'                    |
 | Branch info           |  'git branch' => * feature1 , main                  |
-| 
+| delete Branch         |  ' git branch -d <name> ' 
 
 
 Core workflow you practiced
