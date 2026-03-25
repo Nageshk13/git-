@@ -67,7 +67,12 @@ Reason: -a automatically stages modified files (not new files).
 | Repository files      |  `ls`                                               |
 | Create files          |  `echo "text" > file`                               |
 | Read file             |  `cat file`                                         |
-| Check repo status     | See modified, staged, and branch info | `git status`|
+| git initialize        |  `git init`                                         |
+| global config         |  'git config --global user.name "Alice" (+) git config --global user.email "alice@example.com" ' |
+| Check repo status / See modified, staged, and branch info | `git status`    |
+| git clone(for new 1)  |  `git clone <url>`                                  |
+| clone(specific branch)|  'git clone -b branch-name https://github.com/username/repository.git' |
+| clone(specific folder)|  'git clone https://github.com/username/repository.git myfolder'       |
 | Staging area          |  `git add file` / `git add .`                       |
 | add remote origin     |  'git remote add origin <url>'                      |   
 | Commit changes        |  `git commit -m "message"`                          |
