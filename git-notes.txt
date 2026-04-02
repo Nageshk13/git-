@@ -78,7 +78,8 @@ Reason: -a automatically stages modified files (not new files).
 | Commit changes        |  `git commit -m "message"`                          |
 | Push to GitHub        |  `git push -u origin main`                          |
 | Pull from GitHub      |  `git pull origin main`                             |
-| Merge unrelated repos | Merge repos with different histories  | `git pull origin main --allow-unrelated-histories` |
+| Merge unrelated repos / Merge repos with different histories  | `git pull origin main --allow-unrelated-histories` | 
+| when remote has files but local has deleted them              | 'git pull origin main --rebase'
 | View commit history   |  `git log`                                          |
 | Short commit history  |  `git log --oneline`                                |
 | File-specific history |  `git log -- filename`                              |
